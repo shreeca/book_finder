@@ -1,0 +1,41 @@
+.AutoTextSuggest {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.searchBar{
+    border-radius: 2rem;
+}
+
+.AutoTextSuggest ul {
+    position: absolute;
+    list-style-type: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-size: 14px;
+    background-color: white;
+    width: 100%;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    box-shadow: 2px 2px 6px rgba(1, 1, 1, 0.1), -2px 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.AutoTextSuggest li {
+    padding: 8px 8px;
+    cursor: pointer;
+}
+button {
+    width: 200px;
+    background: #ffd300;
+    border-radius: 32px;
+    border: none;
+    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+    color: #6f6cde;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
