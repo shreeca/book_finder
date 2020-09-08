@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./searchBar.css";
 
-function SearchBooks({ searchUtil, numOfSuggestions, onSelect }) {
+function SearchBooks({ searchMechanism, numOfSuggestions, onSelect }) {
     const [query, setQuery] = useState("");
     const [selectedItem, setSelectedItem] = useState("");
     const [suggestions, setSuggestions] = useState([]);
@@ -10,10 +10,10 @@ function SearchBooks({ searchUtil, numOfSuggestions, onSelect }) {
         if (query.length === 0 || selectedItem === query) {
             setSuggestions([]);
         } else {
-            const suggestions = searchUtil(query, numOfSuggestions);
+            const suggestions = searchMechanism(query, numOfSuggestions);
             setSuggestions(suggestions);
         }
-    }, [query, searchUtil, numOfSuggestions, selectedItem]);
+    }, [query, searchMechanism, numOfSuggestions, selectedItem]);
 
     const handleInputChange = (event) => {
         const { value } = event.target;
